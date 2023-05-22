@@ -1,0 +1,351 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-wrapper {
+  width: 100%;
+}
+
+.content-max {
+  max-width: 80rem;
+}
+
+.hero-mobile {
+  display: none;
+}
+
+.header-wrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hamburger-menu-icon {
+  display: none;
+  width: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.logo-wrapper img {
+  height: 50px;
+}
+
+nav {
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.main-links a img {
+  width: 16px;
+}
+.main-links a {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.search-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.search-wrapper input {
+  min-width: 220px;
+  height: 30px;
+  border-radius: 16px;
+  border: none;
+  background-color: rgb(233, 229, 229);
+  padding-left: 20px;
+}
+
+.icon-menu {
+  display: flex;
+}
+
+.icon-menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.icon-menu-item img {
+  width: 24px;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 36rem;
+}
+
+.hero img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  inset: 0px;
+  display: block;
+  z-index: -10;
+}
+
+.hero-content {
+  color: white;
+  padding-top: 10rem;
+  max-width: 18rem;
+}
+
+.hero-content p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 18px;
+}
+
+.primary-button {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #00e2c9;
+  border: none;
+}
+
+.car-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.car-box {
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 24px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.car-box img {
+  width: 350px;
+}
+
+.middle-box {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.explore-section {
+  background-color: #ededed;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.explore-section img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.explore-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.electrify-section {
+  background-color: #222222;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  color: white;
+}
+
+.electrify-section img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.electric-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.electric-main {
+  padding-left: 5rem;
+}
+
+.explore-main p,
+.electric-main p,
+.electric-main h2 {
+  max-width: 400px;
+}
+
+.electric-miles {
+  padding-left: 8rem;
+}
+
+.sub-content {
+  display: flex;
+  padding-top: 24px;
+}
+
+.sub-content div {
+  max-width: 150px;
+}
+
+.big-text {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.col-half {
+  width: 50%;
+}
+
+/* Mobile Screen */
+@media only screen and (max-width: 600px) {
+  .hide-mobile {
+    display: none;
+  }
+
+  .show-mobile {
+    display: block;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .logo-wrapper img {
+    height: 30px;
+  }
+
+  .hero {
+    display: none;
+  }
+  .hero-mobile img {
+    width: 100%;
+  }
+
+  .hero-mobile {
+    display: block;
+  }
+
+  .hero-content {
+    text-align: center;
+    background-color: #222222;
+    padding: 1rem 1rem;
+    padding-bottom: 2rem;
+    margin: 0;
+    max-width: unset;
+    margin-top: -4px;
+  }
+  .hero-content h1 {
+    padding: 0 2rem;
+  }
+
+  .hamburger-menu-icon {
+    display: block;
+  }
+
+  .primary-button {
+    width: 100%;
+  }
+
+  .cars-section {
+    padding: 1rem;
+  }
+
+  .car-box {
+    margin-bottom: 16px;
+    padding: 16px;
+    width: 100%;
+  }
+  .car-box img {
+    width: 100%;
+  }
+  .middle-box {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .explore-section {
+    padding-top: 0;
+  }
+  .explore-content {
+    flex-direction: column-reverse;
+  }
+
+  .explore-section img {
+    border-radius: 0;
+  }
+
+  .electrify-section {
+    padding-top: 0;
+  }
+
+  .electrify-section img {
+    border-radius: 0;
+  }
+
+  .electric-main {
+    padding: 0;
+  }
+
+  .electric-content {
+    flex-direction: column;
+  }
+  .electric-miles {
+    padding-left: 1rem;
+  }
+
+  .explore-main p,
+  .electric-main p,
+  .electric-main h2 {
+    max-width: unset;
+  }
+
+  .col-half {
+    width: 100%;
+  }
+
+  .mobile-content-wrapper {
+    padding: 1rem;
+  }
+}
+
+/* Medium screens  */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+}
